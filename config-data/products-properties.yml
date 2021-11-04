@@ -1,10 +1,27 @@
-spring.devtools.restart.enabled=true
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.hibernate.ddl-auto=update
-spring.jackson.property-naming-strategy=LOWER_CAMEL_CASE
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL55Dialect
-spring.jpa.properties.hibernate.dialect.storage_engine=innod
-spring.cloud.config.import-check.enabled=false
-spring.datasource.url=jdbc\:mysql\://localhost\:3306/microserviciosprueba
-spring.datasource.username=microservicios
-spring.datasource.password=microservicios
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microserviciosprueba
+    username: microservicios
+    password: microservicios
+
+  jackson:
+    propertyNamingStrategy: LOWER_CAMEL_CASE
+  devtools:
+    restart:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+
+
+
+
+  cloud:
+    config:
+      importCheck:
+        enabled: false
