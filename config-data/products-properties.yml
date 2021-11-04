@@ -18,10 +18,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL55Dialect
 
-
-
-
   cloud:
     config:
       importCheck:
         enabled: false
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8099/eureka/
