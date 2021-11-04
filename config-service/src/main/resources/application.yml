@@ -9,7 +9,7 @@ spring:
           uri: https://github.com/RogerBariles/microservicios.git
           searchPaths: config-data
           username: RogerBariles
-          password: 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
+          password: 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
   security:
     user:
       name: root
