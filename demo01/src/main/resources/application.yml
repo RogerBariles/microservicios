@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microserviciosprueba
+    username: microservicios
+    password: microservicios
+
+  jackson:
+    propertyNamingStrategy: LOWER_CAMEL_CASE
+  devtools:
+    restart:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+
+
+
+
+  cloud:
+    config:
+      importCheck:
+        enabled: false

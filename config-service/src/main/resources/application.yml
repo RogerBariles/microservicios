@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RogerBariles/microservicios.git
+          searchPaths: config-data
+          username: RogerBariles
+          password: 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
+  security:
+    user:
+      name: root
+      password: root
